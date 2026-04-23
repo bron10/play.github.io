@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Logic Club</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">Little Logic Club</p>
+          <h1>Pick a brain game</h1>
+        </div>
+        <div class="toolbar">
+          <button id="homeButton" class="toolbar-button">Home</button>
+          <button id="retryButton" class="toolbar-button">Play Again</button>
+          <button id="submitButton" class="toolbar-button toolbar-button--primary">Check</button>
+          <button id="nextButton" class="toolbar-button toolbar-button--accent">Next Level</button>
+          <button id="soundButton" class="toolbar-button">Sound: On</button>
+        </div>
+      </header>
+
+      <main id="app" class="app-main"></main>
+    </div>
+
+    <div id="resultModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-card">
+        <p id="resultEmoji" class="modal-emoji" aria-hidden="true"></p>
+        <h2 id="resultTitle"></h2>
+        <p id="resultMessage"></p>
+        <div class="modal-actions">
+          <button id="modalRetryButton" class="toolbar-button">Try Again</button>
+          <button id="modalNextButton" class="toolbar-button toolbar-button--accent">Next Level</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
